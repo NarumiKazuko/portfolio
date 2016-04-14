@@ -1,0 +1,67 @@
+# User Settings | Edit these according to your site
+
+title: Owen's Portfolio
+email: walteowe0@bloomingtonacademy.org
+author: Owen Walters
+
+description: > # this means to ignore newlines until "baseurl:"
+  On this site I'll show some of the assignments I have done for my school. I really like to focus on things that show my creative side. I've included several videos as well as an essay in the "My Work" section. I'll also talk about myself and the career I hope to have in the about me section. It's all pretty awesome
+
+url: "http://portfolio.owenwalters.net/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+linkedin_username: owenwalters.net
+github_username:  10by10pixel
+
+permalink: "/blog/:categories/:year/:month/:day/:title/"
+
+paginate: 5
+paginate_path: "/blog/page/:num/"
+comments: true
+
+heading_font: Lobster
+about_footer: true
+short_bio: >
+    I'm Owen Walters. I go to The Academy of Science and Entreprenuership. I'm an amatuer videographer and designer. On this site I'll show some of the assignments I have done for my school. I really like to focus on things that show my creative side. I've included several videos as well as an essay in the "My Work" section. I'll also talk about myself and the career I hope to have in the about me section. It's all pretty awesome.
+profile_picture: https://secure.gravatar.com/avatar/b0e4ca904d3ea3b919c1095339e44bc7?s=128&d=identicon
+
+nav:
+  -
+    title: About
+    url: /about/
+  -
+    title: Blog
+    url: /blog/
+
+google_analytics: false
+tracking_id: # Your google analytics tracking id
+
+# Build settings | Do not edit anything below this
+markdown: kramdown
+
+gems:
+  - jekyll-paginate
+  - gemoji
+
+sass:
+  style:            compressed
+  sass_dir:         _sass
+
+collections:
+  - works
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+exclude: [vendor]

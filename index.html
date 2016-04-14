@@ -1,0 +1,32 @@
+---
+layout: default
+published: true
+---
+
+
+<section class="intro">
+  <div class="container">
+    <header class="welcome-header">
+      <p>{{  site.description  }}</p>
+      <div align="center"><small><a href="https://sites.google.com/a/bnths.nthls.com/owens-portfolio/home/resume.docx?attredirects=0&d=1">Download my resume</a></small></div>
+    </header>
+  </div>
+</section>
+<h1 style="font-size:72px;text-align:center;">Works</h1>
+<section class="post-list">
+  <div class="container">
+    <ul>
+      {% assign lastwork = site.works | last %}
+      {% for work in site.works %}
+       <article>
+         <h1 style="font-size:48px;">{{work.title}}</h1>
+         <h2>{{work.category}}</h2>
+         <div align="center">{% if work.image %}<img width="640" src="{{work.image}}"></img>{% endif %}
+         {% if work.youtube %}<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/{{work.youtube}}" frameborder="0" allowfullscreen></iframe>{% endif %}</div>
+         <p>{{ work.content }}</p>
+         {% if work != lastwork %}<hr style="border-width:10px;" />{% endif %}
+       </article>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
