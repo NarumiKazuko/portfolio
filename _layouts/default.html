@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-no-instant>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,7 +29,7 @@
 					</a>
 		  			<ul class="navlist">
 							{% for egg in site.nav %}
-								<li><a href="{{egg.url}}" {% if page.title == egg.title or (egg.title == "Blog" and page.date) %}class="current"{% endif %}>{{egg.title}}</a></li>
+								<li><a href="{{egg.url}}" {% if page.title == egg.title or (egg.title == "Blog" and page.date) %}class="current"{% endif %} data-instant>{{egg.title}}</a></li>
 								{% endfor %}
 		  			</ul>
 		  		</div>
