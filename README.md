@@ -2,7 +2,7 @@
 
 ### STATUS
 
-[![Build Status](https://travis-ci.org/10by10pixel/20percentblog.svg)](https://travis-ci.org/10by10pixel/20percentblog)
+[![Build Status](https://travis-ci.org/10by10pixel/portfolio.svg)](https://travis-ci.org/10by10pixel/portfolio)
 
 #### Needs and Opportunities
  * Creating a video <del>or series of videos</del> to help remarket the school.
